@@ -1,0 +1,20 @@
+ body{
+ 	background-color:#677077;
+ }
+#logo{
+	height: 100%;
+}
+.container-fluid{
+	background-color: #252839;
+}
+.navbar-default .navbar-nav .active{
+    color: orange;
+   background: #d65c14;
+ }
+
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: orange;
+      background: #d65c14;
+ }
