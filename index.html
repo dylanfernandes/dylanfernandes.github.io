@@ -2,12 +2,14 @@
 <html>
 <head>
 	<title>Dylan's Personal site</title>
+   <script data-require="angular.js@1.4.0-beta.5" data-semver="1.4.0-beta.5" src="https://code.angularjs.org/1.4.0-beta.5/angular.js"></script>
   <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="script.js"></script>
 </head>
-<body>
-<nav class="navbar navbar-default">
+<body ng-app="anchorScrollExample">
+<nav class="navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -21,16 +23,31 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div id="scrollArea" ng-controller="ScrollController" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="/projects.html">Projects</a></li>
+        <li><a ng-click="gotoDiv('projects')"" >Projects</a></li>
         <li><a href="#">About</a></li>
         <li ><a href="#">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<div id="heroimage">
+  
+</div>
+<div id="content">
+  <h1>Page title</h1>
+  <p>Some Text</p>
+</div>
+
+ 
+<div id="home">
 <p>Hi, I am Dylan Fernanades, a software engineering student at Concordia University. I created this site in order to gain more experience in website development and to show my abilities and past experience.</p>
+</div>
+<div id="projects" style="margin-top:2000px;">
+projects
+</div>
 </body>
 </html>

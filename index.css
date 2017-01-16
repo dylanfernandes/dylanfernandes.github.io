@@ -5,7 +5,7 @@
 	height: 100%;
 }
 .container-fluid{
-	background-color: #252839;
+	background-color: black;
 }
 .navbar-default .navbar-nav .active{
     color: orange;
@@ -18,3 +18,17 @@
       color: orange;
       background: #d65c14;
  }
+
+ html, body, #heroimage{
+  width:100%;
+  height:100%;
+}
+
+#heroimage{   
+  background:url('me.jpg') center center;
+  background-size:cover;
+}
+
+#content{
+  padding:20px;
+}
